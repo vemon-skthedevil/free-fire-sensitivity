@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABDULLAH X QASIM - Free Fire Sensitivity</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+        }
+
+        header {
+            width: 100%;
+            padding: 30px;
+            background: #ff4500;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            font-size: 38px;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 20px;
+            margin-top: 8px;
+        }
+
+        .profile {
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 6px solid #ff4500;
+            object-fit: cover;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(255, 69, 0, 0.7);
+        }
+
+        .profile h2 {
+            margin-top: 15px;
+            font-size: 30px;
+            color: #ff4500;
+            font-weight: 600;
+        }
+
+        .search-container {
+            margin: 30px 0;
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            justify-content: center;
+        }
+
+        #deviceSearch {
+            padding: 15px;
+            width: 80%;
+            border: none;
+            border-radius: 10px 0 0 10px;
+            font-size: 18px;
+            background: #333;
+            color: #fff;
+        }
+
+        .search-btn {
+            padding: 15px 30px;
+            background: #ff4500;
+            border: none;
+            border-radius: 0 10px 10px 0;
+            color: #fff;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+
+        .search-btn:hover {
+            background: #e03e00;
+        }
+
+        .sensitivity-results {
+            width: 100%;
+            max-width: 1000px;
+            margin: 30px;
+            padding: 30px;
+            background: #252525;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        .sensitivity-results h3 {
+            color: #ff4500;
+            margin-bottom: 20px;
+            font-size: 26px;
+            font-weight: 600;
+        }
+
+        .sensitivity-results p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin: 8px 0;
+        }
+
+        .sensitivity-results ul {
+            list-style-type: none;
+            margin-top: 20px;
+        }
+
+        .sensitivity-results ul li {
+            font-size: 16px;
+            color: #ccc;
+            margin: 5px 0;
+            cursor: pointer;
+        }
+
+        .sensitivity-results ul li:hover {
+            color: #ff4500;
+        }
+
+        .chat-section {
+            width: 100%;
+            max-width: 1000px;
+            margin: 30px;
+            padding: 20px;
+            background: #252525;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        .chat-section h3 {
+            color: #ff4500;
+            margin-bottom: 15px;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .chat-section p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 30px;
+            background: #ff4500;
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            header p {
+                font-size: 16px;
+            }
+
+            .profile-img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .search-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #deviceSearch {
+                width: 100%;
+                border-radius: 10px;
+                margin-bottom: 15px;
+            }
+
+            .search-btn {
+                width: 100%;
+                border-radius: 10px;
+            }
+
+            .sensitivity-results, .chat-section {
+                margin: 20px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ABDULLAH X QASIM Sensitivity</h1>
+        <p>Real Free Fire Sensitivity Settings for ALL Devices</p>
+    </header>
+
+    <div class="profile">
+
+            <img src="https://img1.pixhost.to/images/8118/633421405_imgtmp.jpg" alt="ABDULLAH X QASIM" class="profile-img">
+        </a>
+        <h2>ABDULLAH X QASIM</h2>
+    </div>
+<a href="https://whatsapp.com/channel/0029VbBE4tjBVJkzJPCXmR1W"  class="join-btn">
+    <h2>FOLLOW CHENNAL</h2>
+</a>
+    <div class="search-container">
+  <input type="text" id="deviceSearch" placeholder="Enter your device name...">
+  <button class="search-btn">Search Sensitivity</button>
+  <div id="results"></div>
+</div>
+    <div class="sensitivity-results" id="results">
+        <h3>Sensitivity Settings</h3>
+        <p>Enter your device model to get optimized Free Fire sensitivity settings for headshots and smooth gameplay.</p>
+    </div>
+
+    <div class="chat-section">
+        <h3>Chat with Abdullah x Qasim</h3>
+        <p><strong>Abdullah:</strong> Yo bhai, Free Fire mein headshots maarne ke liye perfect sensitivity chahiye? Apna device search kar, aur settings grab kar!</p>
+        <p><strong>Qasim:</strong> Haan bhai, yeh settings humne pros aur community se test karke banaye hain. Low-end ho ya high-end, sabke liye perfect hai!</p>
+        <p><strong>Abdullah:</strong> Agar device nahi mila, toh similar devices ki list check karo, ya default settings try karo. Training mode mein test karo, aur ±5 adjust karlo!</p>
+        <p><strong>Qasim:</strong> Koi issue ho ya naya device add karna ho, hamein X pe ping karo (@AbdullahxQasimFF). Let's dominate Bermuda! 🔥</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Abdullah x Qasim. This tool is made only for educational and research purposes only.</p>
+    </footer>
+
+    <script>
+        const deviceSensitivity = {
+            // iPhone Models (20)
+            "iphone 16": { general: 92, redDot: 88, scope2x: 85, scope4x: 80, sniper: 75, freeLook: 95 },
+            "iphone 16 pro": { general: 107, redDot: 103, scope2x: 100, scope4x: 95, sniper: 90, freeLook: 110 },
+            "iphone 15": { general: 82, redDot: 78, scope2x: 75, scope4x: 70, sniper: 65, freeLook: 85 },
+            "iphone 15 pro": { general: 97, redDot: 93, scope2x: 90, scope4x: 85, sniper: 80, freeLook: 100 },
+            "iphone 14": { general: 77, redDot: 73, scope2x: 70, scope4x: 65, sniper: 60, freeLook: 80 },
+            "iphone 14 pro": { general: 92, redDot: 88, scope2x: 85, scope4x: 80, sniper: 75, freeLook: 95 },
+            "iphone 13": { general: 105, redDot: 101, scope2x: 98, scope4x: 93, sniper: 88, freeLook: 108 },
+            "iphone 13 pro": { general: 85, redDot: 81, scope2x: 78, scope4x: 73, sniper: 68, freeLook: 88 },
+            "iphone 12": { general: 70, redDot: 66, scope2x: 63, scope4x: 58, sniper: 53, freeLook: 73 },
+            "iphone 12 pro": { general: 90, redDot: 86, scope2x: 83, scope4x: 78, sniper: 73, freeLook: 93 },
+            "iphone 11": { general: 103, redDot: 99, scope2x: 96, scope4x: 91, sniper: 86, freeLook: 106 },
+            "iphone 11 pro": { general: 80, redDot: 76, scope2x: 73, scope4x: 68, sniper: 63, freeLook: 83 },
+            "iphone xr": { general: 95, redDot: 91, scope2x: 88, scope4x: 83, sniper: 78, freeLook: 98 },
+            "iphone xs": { general: 75, redDot: 71, scope2x: 68, scope4x: 63, sniper: 58, freeLook: 78 },
+            "iphone se 2022": { general: 88, redDot: 84, scope2x: 81, scope4x: 76, sniper: 71, freeLook: 91 },
+            "iphone se 2020": { general: 102, redDot: 98, scope2x: 95, scope4x: 90, sniper: 85, freeLook: 105 },
+            "iphone 8": { general: 78, redDot: 74, scope2x: 71, scope4x: 66, sniper: 61, freeLook: 81 },
+            "iphone 8 plus": { general: 93, redDot: 89, scope2x: 86, scope4x: 81, sniper: 76, freeLook: 96 },
+            "iphone 7": { general: 80, redDot: 76, scope2x: 73, scope4x: 68, sniper: 63, freeLook: 83 },
+            "iphone 6": { general: 68, redDot: 64, scope2x: 61, scope4x: 56, sniper: 51, freeLook: 71 },
+
+            // Infinix Models (30)
+            "infinix hot 40": { general: 86, redDot: 82, scope2x: 78, scope4x: 74, sniper: 69, freeLook: 91 },
+            "infinix hot 40 pro": { general: 101, redDot: 97, scope2x: 93, scope4x: 89, sniper: 84, freeLook: 106 },
+            "infinix hot 30": { general: 76, redDot: 72, scope2x: 68, scope4x: 64, sniper: 59, freeLook: 81 },
+            "infinix hot 30i": { general: 90, redDot: 86, scope2x: 82, scope4x: 78, sniper: 73, freeLook: 95 },
+            "infinix hot 20": { general: 105, redDot: 101, scope2x: 97, scope4x: 93, sniper: 88, freeLook: 108 },
+            "infinix hot 20s": { general: 80, redDot: 76, scope2x: 72, scope4x: 68, sniper: 63, freeLook: 85 },
+            "infinix hot 10": { general: 92, redDot: 88, scope2x: 84, scope4x: 80, sniper: 75, freeLook: 97 },
+            "infinix hot 10s": { general: 77, redDot: 73, scope2x: 69, scope4x: 65, sniper: 60, freeLook: 82 },
+            "infinix hot 12": { general: 98, redDot: 94, scope2x: 90, scope4x: 86, sniper: 81, freeLook: 103 },
+            "infinix hot 12 pro": { general: 83, redDot: 79, scope2x: 75, scope4x: 71, sniper: 66, freeLook: 88 },
+            "infinix note 40": { general: 94, redDot: 90, scope2x: 86, scope4x: 82, sniper: 77, freeLook: 99 },
+            "infinix note 40 pro": { general: 109, redDot: 105, scope2x: 101, scope4x: 97, sniper: 92, freeLook: 111 },
+            "infinix note 30": { general: 79, redDot: 75, scope2x: 71, scope4x: 67, sniper: 62, freeLook: 84 },
+            "infinix note 30 pro": { general: 96, redDot: 92, scope2x: 88, scope4x: 84, sniper: 79, freeLook: 101 },
+            "infinix note 12": { general: 81, redDot: 77, scope2x: 73, scope4x: 69, sniper: 64, freeLook: 86 },
+            "infinix note 10": { general: 100, redDot: 96, scope2x: 92, scope4x: 88, sniper: 83, freeLook: 105 },
+            "infinix note 10 pro": { general: 85, redDot: 81, scope2x: 77, scope4x: 73, sniper: 68, freeLook: 90 },
+            "infinix zero 30": { general: 93, redDot: 89, scope2x: 85, scope4x: 81, sniper: 76, freeLook: 98 },
+            "infinix zero 20": { general: 78, redDot: 74, scope2x: 70, scope4x: 66, sniper: 61, freeLook: 83 },
+            "infinix zero ultra": { general: 102, redDot: 98, scope2x: 94, scope4x: 90, sniper: 85, freeLook: 107 },
+            "infinix gt 20 pro": { general: 87, redDot: 83, scope2x: 79, scope4x: 75, sniper: 70, freeLook: 92 },
+            "infinix gt 10 pro": { general: 104, redDot: 100, scope2x: 96, scope4x: 92, sniper: 87, freeLook: 109 },
+            "infinix smart 8": { general: 80, redDot: 76, scope2x: 72, scope4x: 68, sniper: 63, freeLook: 85 },
+            "infinix smart 7": { general: 95, redDot: 91, scope2x: 87, scope4x: 83, sniper: 78, freeLook: 100 },
+            "infinix smart 6": { general: 75, redDot: 71, scope2x: 67, scope4x: 63, sniper: 58, freeLook: 80 },
+            "infinix hot 11": { general: 99, redDot: 95, scope2x: 91, scope4x: 87, sniper: 82, freeLook: 104 },
+            "infinix hot 11s": { general: 84, redDot: 80, scope2x: 76, scope4x: 72, sniper: 67, freeLook: 89 },
+            "infinix note 11": { general: 91, redDot: 87, scope2x: 83, scope4x: 79, sniper: 74, freeLook: 96 },
+            "infinix zero 5g": { general: 106, redDot: 102, scope2x: 98, scope4x: 94, sniper: 89, freeLook: 111 },
+            "infinix hot 9": { general: 79, redDot: 75, scope2x: 71, scope4x: 67, sniper: 62, freeLook: 84 },
+
+            // OPPO Models (30)
+            "oppo reno 10": { general: 92, redDot: 88, scope2x: 85, scope4x: 80, sniper: 75, freeLook: 98 },
+            "oppo reno 10 pro": { general: 108, redDot: 104, scope2x: 100, scope4x: 96, sniper: 91, freeLook: 113 },
+            "oppo reno 8": { general: 80, redDot: 76, scope2x: 73, scope4x: 68, sniper: 63, freeLook: 85 },
+            "oppo reno 8 pro": { general: 95, redDot: 91, scope2x: 88, scope4x: 83, sniper: 78, freeLook: 100 },
+            "oppo reno 11": { general: 70, redDot: 66, scope2x: 63, scope4x: 58, sniper: 53, freeLook: 75 },
+            "oppo reno 11 pro": { general: 85, redDot: 81, scope2x: 78, scope4x: 73, sniper: 68, freeLook: 90 },
+            "oppo find x6": { general: 100, redDot: 96, scope2x: 93, scope4x: 88, sniper: 83, freeLook: 105 },
+            "oppo find x6 pro": { general: 110, redDot: 106, scope2x: 102, scope4x: 98, sniper: 93, freeLook: 115 },
+            "oppo a78": { general: 78, redDot: 74, scope2x: 71, scope4x: 66, sniper: 61, freeLook: 83 },
+            "oppo a58": { general: 92, redDot: 88, scope2x: 85, scope4x: 80, sniper: 75, freeLook: 97 },
+            "oppo a38": { general: 75, redDot: 71, scope2x: 68, scope4x: 63, sniper: 58, freeLook: 80 },
+            "oppo a18": { general: 90, redDot: 86, scope2x: 83, scope4x: 78, sniper: 73, freeLook: 95 },
+            "oppo f25 pro": { general: 103, redDot: 99, scope2x: 96, scope4x: 91, sniper: 86, freeLook: 108 },
+            "oppo k12x": { general: 80, redDot: 76, scope2x: 73, scope4x: 68, sniper: 63, freeLook: 85 },
+            "oppo a16": { general: 94, redDot: 90, scope2x: 87, scope4x: 82, sniper: 77, freeLook: 99 },
+            "oppo a17": { general: 77, redDot: 73, scope2x: 70, scope4x: 65, sniper: 60, freeLook: 82 },
+            "oppo f23": { general: 98, redDot: 94, scope2x: 91, scope4x: 86, sniper: 81, freeLook: 103 },
+            "oppo a77": { general: 83, redDot: 79, scope2x: 76, scope4x: 71, sniper: 66, freeLook: 88 },
+            "oppo a57": { general: 96, redDot: 92, scope2x: 89, scope4x: 84, sniper: 79, freeLook: 101 },
+            "oppo reno 7": { general: 79, redDot: 75, scope2x: 72, scope4x: 67, sniper: 62, freeLook: 84 },
+            "oppo reno 7 pro": { general: 102, redDot: 98, scope2x: 95, scope4x: 90, sniper: 85, freeLook: 107 },
+            "oppo a15": { general: 85, redDot: 81, scope2x: 78, scope4x: 73, sniper: 68, freeLook: 90 },
+            "oppo f21 pro": { general: 100, redDot: 96, scope2x: 93, scope4x: 88, sniper: 83, freeLook: 105 },
+            "oppo a54": { general: 78, redDot: 74, scope2x: 71, scope4x: 66, sniper: 61, freeLook: 83 },
+            "oppo a74": { general: 93, redDot: 89, scope2x: 86, scope4x: 81, sniper: 76, freeLook: 98 },
+            "oppo reno 6": { general: 76, redDot: 72, scope2x: 69, scope4x: 64, sniper: 59, freeLook: 81 },
+            "oppo find x5": { general: 105, redDot: 101, scope2x: 98, scope4x: 93, sniper: 88, freeLook: 110 },
+            "oppo a53": { general: 88, redDot: 84, scope2x: 81, scope4x: 76, sniper: 71, freeLook: 93 },
+            "oppo a33": { general: 73, redDot: 69, scope2x: 66, scope4x: 61, sniper: 56, freeLook: 78 },
+            "oppo k10": { general: 97, redDot: 93, scope2x: 90, scope4x: 85, sniper: 80, freeLook: 102 },
+
+            // Samsung Models (25)
+            "samsung s23": { general: 94, redDot: 90, scope2x: 87, scope4x: 83, sniper: 78, freeLook: 100 },
+            "samsung s23 ultra": { general: 110, redDot: 106, scope2x: 103, scope4x: 98, sniper: 93, freeLook: 115 },
+            "samsung s22": { general: 80, redDot: 76, scope2x: 73, scope4x: 68, sniper: 63, freeLook: 85 },
+            "samsung s22 ultra": { general: 97, redDot: 93, scope2x: 90, scope4x: 85, sniper: 80, freeLook: 102 },
+            "samsung s21": { general: 75, redDot: 71, scope2x: 68, scope4x: 63, sniper: 58, freeLook: 80 },
+            "samsung s21 ultra": { general: 92, redDot: 88, scope2x: 85, scope4x: 80, sniper: 75, freeLook: 97 },
+            "samsung s21 fe": { general: 103, redDot: 99, scope2x: 96, scope4x: 91, sniper: 86, freeLook: 108 },
+            "samsung a54": { general: 78, redDot: 74, scope2x: 71, scope4x: 66, sniper: 61, freeLook: 83 },
+            "samsung a34": { general: 95, redDot: 91, scope2x: 88, scope4x: 83, sniper: 78, freeLook: 100 },
+            "samsung a24": { general: 70, redDot: 66, scope2x: 63, scope4x: 58, sniper: 53, freeLook: 75 },
+            "samsung a14": { general: 88, redDot: 84, scope2x: 81, scope4x: 76, sniper: 71, freeLook: 93 },
+            "samsung m34": { general: 101, redDot: 97, scope2x: 94, scope4x: 89, sniper: 84, freeLook: 106 },
+            "samsung m14": { general: 79, redDot: 75, scope2x: 72, scope4x: 67, sniper: 62, freeLook: 84 },
+            "samsung z fold 6": { general: 108, redDot: 104, scope2x: 101, scope4x: 96, sniper: 91, freeLook: 113 },
+            "samsung z fold 5": { general: 85, redDot: 81, scope2x: 78, scope4x: 73, sniper: 68, freeLook: 90 },
+            "samsung z flip 6": { general: 99, redDot: 95, scope2x: 92, scope4x: 87, sniper: 82, freeLook: 104 },
+            "samsung z flip 5": { general: 76, redDot: 72, scope2x: 69, scope4x: 64, sniper: 59, freeLook: 81 },
+            "samsung a73": { general: 93, redDot: 89, scope2x: 86, scope4x: 81, sniper: 76, freeLook: 98 },
+            "samsung a53": { general: 80, redDot: 76, scope2x: 73, scope4x: 68, sniper: 63, freeLook: 85 },
+            "samsung a33": { general: 102, redDot: 98, scope2x: 95, scope4x: 90, sniper: 85, freeLook: 107 },
+            "samsung m54": { general: 77, redDot: 73, scope2x: 70, scope4x: 65, sniper: 60, freeLook: 82 },
+            "samsung f34": { general: 94, redDot: 90, scope2x: 87, scope4x: 82, sniper: 77, freeLook: 99 },
+            "samsung a23": { general: 70, redDot: 66, scope2x: 63, scope4x: 58, sniper: 53, freeLook: 75 },
+            "samsung a13": { general: 98, redDot: 94, scope2x: 91, scope4x: 86, sniper: 81, freeLook: 103 },
+            "samsung a04": { general: 83, redDot: 79, scope2x: 76, scope4x: 71, sniper: 66, freeLook: 88 },
+
+            // Realme Models (20)
+            "realme narzo 60": { general: 90, redDot: 86, scope2x: 83, scope4x: 78, sniper: 73, freeLook: 95 },
+            "realme narzo 60 pro": { general: 105, redDot: 101, scope2x: 98, scope4x: 93, sniper: 88, freeLook: 110 },
+            "realme 11 pro": { general: 78, redDot: 74, scope2x: 71, scope4x: 66, sniper: 61, freeLook: 83 },
+            "realme 11": { general: 94, redDot: 90, scope2x: 87, scope4x: 82, sniper: 77, freeLook: 99 },
+            "realme 9": { general: 80, redDot: 76, scope2x: 73, scope4x: 68, sniper: 63, freeLook: 85 },
+            "realme 9 pro": { general: 97, redDot: 93, scope2x: 90, scope4x: 85, sniper: 80, freeLook: 102 },
+            "realme c55": { general: 75, redDot: 71, scope2x: 68, scope4x: 63, sniper: 58, freeLook: 80 },
+            "realme c35": { general: 91, redDot: 87, scope2x: 84, scope4x: 79, sniper: 74, freeLook: 96 },
+            "realme gt neo 3": { general: 103, redDot: 99, scope2x: 96, scope4x: 91, sniper: 86, freeLook: 108 },
+            "realme narzo 50": { general: 79, redDot: 75, scope2x: 72, scope4x: 67, sniper: 62, freeLook: 84 },
+            "realme 8": { general: 95, redDot: 91, scope2x: 88, scope4x: 83, sniper: 78, freeLook: 100 },
+            "realme 8 pro": { general: 82, redDot: 78, scope2x: 75, scope4x: 70, sniper: 65, freeLook: 87 },
+                        "realme c53": { general: 98, redDot: 94, scope2x: 91, scope4x: 86, sniper: 81, freeLook: 103 },
+               "realme narzo n55": { general: 87, redDot: 83, scope2x: 79, scope4x: 75, sniper: 70, freeLook: 92 },
+            "realme 10": { general: 89, redDot: 85, scope2x: 81, scope4x: 77, sniper: 72, freeLook: 94 },
+            "realme 10 pro": { general: 90, redDot: 86, scope2x: 82, scope4x: 78, sniper: 73, freeLook: 95 },
+            "realme gt 2": { general: 92, redDot: 88, scope2x: 85, scope4x: 81, sniper: 76, freeLook: 98 },
+            "realme c33": { general: 86, redDot: 82, scope2x: 78, scope4x: 74, sniper: 69, freeLook: 91 },
+            "realme narzo 50a": { general: 87, redDot: 83, scope2x: 79, scope4x: 75, sniper: 70, freeLook: 92 },
+            "realme 7": { general: 89, redDot: 85, scope2x: 81, scope4x: 77, sniper: 72, freeLook: 94 },
+
+            // Vivo Models (20)
+            "vivo v29": { general: 92, redDot: 88, scope2x: 85, scope4x: 81, sniper: 76, freeLook: 98 },
+            "vivo v29 pro": { general: 93, redDot: 89, scope2x: 86, scope4x: 82, sniper: 77, freeLook: 99 },
+            "vivo v27": { general: 91, redDot: 87, scope2x: 84, scope4x: 80, sniper: 75, freeLook: 97 },
+            "vivo v27 pro": { general: 92, redDot: 88, scope2x: 85, scope4x: 81, sniper: 76, freeLook: 98 },
+            "vivo t2": { general: 90, redDot: 86, scope2x: 82, scope4x: 78, sniper: 73, freeLook: 95 },
+            "vivo t2 pro": { general: 91, redDot: 87, scope2x: 83, scope4x: 79, sniper: 74, freeLook: 96 },
+            "vivo y27": { general: 88, redDot: 84, scope2x: 80, scope4x: 76, sniper: 71, freeLook: 93 },
+            "vivo y16": { general: 86, redDot: 82, scope2x: 78, scope4x: 74, sniper: 69, freeLook: 91 },
+            "vivo y36": { general: 87, redDot: 83, scope2x: 79, scope4x: 75, sniper: 70, freeLook: 92 },
+            "vivo y22": { general: 86, redDot: 82, scope2x: 78, scope4x: 74, sniper: 69, freeLook: 91 },
+            "vivo v25": { general: 91, redDot: 87, scope2x: 84, scope4x: 80, sniper: 75, freeLook: 97 },
+            "vivo v23": { general: 90, redDot: 86, scope2x: 82, scope4x: 78, sniper: 73, freeLook: 95 },
+            "vivo y70s": { general: 87, redDot: 83, scope2x: 79, scope4x: 75, sniper: 70, freeLook: 92 },
+            "vivo y21": { general: 86, redDot: 82, scope2x: 78, scope4x: 74, sniper: 69, freeLook: 91 },
+            "vivo t1": { general: 89, redDot: 85, scope2x: 81, scope4x: 77, sniper: 72, freeLook: 94 },
+            "vivo y33s": { general: 87, redDot: 83, scope2x: 79, scope4x: 75, sniper: 70, freeLook: 92 },
+            "vivo v21": { general: 90, redDot: 86, scope2x: 82, scope4x: 78, sniper: 73, freeLook: 95 },
+            "vivo y15s": { general: 85, redDot: 81, scope2x: 77, scope4x: 73, sniper: 68, freeLook: 90 },
+            "vivo y02": { general: 85, redDot: 81, scope2x: 77, scope4x: 73, sniper: 68, freeLook: 90 },
+            "vivo x80": { general: 93, redDot: 89, scope2x: 86, scope4x: 82, sniper: 77, freeLook: 99 },
+
+            // Xiaomi/Redmi/Poco Models (20)
+            "xiaomi 14": { general: 95, redDot: 91, scope2x: 88, scope4x: 84, sniper: 79, freeLook: 100 },
+            "xiaomi 14 pro": { general: 95, redDot: 92, scope2x: 89, scope4x: 85, sniper: 80, freeLook: 100 },
+            "xiaomi 13": { general: 94, redDot: 90, scope2x: 87, scope4x: 83, sniper: 78, freeLook: 99 },
+            "xiaomi 13 pro": { general: 94, redDot: 91, scope2x: 88, scope4x: 84, sniper: 79, freeLook: 99 },
+            "redmi note 12": { general: 89, redDot: 85, scope2x: 81, scope4x: 77, sniper: 72, freeLook: 94 },
+            "redmi note 12 pro": { general: 90, redDot: 86, scope2x: 82, scope4x: 78, sniper: 73, freeLook: 95 },
+            "redmi note 11": { general: 88, redDot: 84, scope2x: 80, scope4x: 76, sniper: 71, freeLook: 93 },
+            "redmi note 11 pro": { general: 89, redDot: 85, scope2x: 81, scope4x: 77, sniper: 72, freeLook: 94 },
+            "redmi 13c": { general: 86, redDot: 82, scope2x: 78, scope4x: 74, sniper: 69, freeLook: 91 },
+            "redmi 12": { general: 87, redDot: 83, scope2x: 79, scope4x: 75, sniper: 70, freeLook: 92 },
+            "poco f5": { general: 93, redDot: 89, scope2x: 86, scope4x: 82, sniper: 77, freeLook: 98 },
+            "poco x5": { general: 90, redDot: 86, scope2x: 82, scope4x: 78, sniper: 73, freeLook: 95 },
+            "poco m4 pro": { general: 89, redDot: 85, scope2x: 81, scope4x: 77, sniper: 72, freeLook: 94 },
+            "poco x4 pro": { general: 90, redDot: 86, scope2x: 82, scope4x: 78, sniper: 73, freeLook: 95 },
+            "redmi note 10": { general: 88, redDot: 84, scope2x: 80, scope4x: 76, sniper: 71, freeLook: 93 },
+            "redmi note 10 pro": { general: 89, redDot: 85, scope2x: 81, scope4x: 77, sniper: 72, freeLook: 94 },
+            "poco f4": { general: 92, redDot: 88, scope2x: 85, scope4x: 81, sniper: 76, freeLook: 98 },
+            "xiaomi 12": { general: 93, redDot: 89, scope2x: 86, scope4x: 82, sniper: 77, freeLook: 99 },
+            "redmi 10": { general: 87, redDot: 83, scope2x: 79, scope4x: 75, sniper: 70, freeLook: 92 },
+            "poco m5": { general: 88, redDot: 84, scope2x: 80, scope4x: 76, sniper: 71, freeLook: 93 },
+
+            // OnePlus Models (15)
+            "oneplus 11": { general: 95, redDot: 91, scope2x: 88, scope4x: 84, sniper: 79, freeLook: 100 },
+            "oneplus 11r": { general: 94, redDot: 90, scope2x: 87, scope4x: 83, sniper: 78, freeLook: 99 },
+            "oneplus 10 pro": { general: 93, redDot: 89, scope2x: 86, scope4x: 82, sniper: 77, freeLook: 99 },
+            "oneplus 10r": { general: 92, redDot: 88, scope2x: 85, scope4x: 81, sniper: 76, freeLook: 98 },
+            "oneplus nord 3": { general: 91, redDot: 87, scope2x: 84, scope4x: 80, sniper: 75, freeLook: 97 },
+            "oneplus nord ce 3": { general: 90, redDot: 86, scope2x: 82, scope4x: 78, sniper: 73, freeLook: 95 },
+            "oneplus 9": { general: 92, redDot: 88, scope2x: 85, scope4x: 81, sniper: 76, freeLook: 98 },
+            "oneplus 9 pro": { general: 93, redDot: 89, scope2x: 86, scope4x: 82, sniper: 77, freeLook: 99 },
+            "oneplus nord 2": { general: 90, redDot: 86, scope2x: 82, scope4x: 78, sniper: 73, freeLook: 95 },
+            "oneplus nord ce 2": { general: 89, redDot: 85, scope2x: 81, scope4x: 77, sniper: 72, freeLook: 94 },
+            "oneplus 8": { general: 91, redDot: 87, scope2x: 84, scope4x: 80, sniper: 75, freeLook: 97 },
+            "oneplus 8 pro": { general: 92, redDot: 88, scope2x: 85, scope4x: 81, sniper: 76, freeLook: 98 },
+            "oneplus nord": { general: 89, redDot: 85, scope2x: 81, scope4x: 77, sniper: 72, freeLook: 94 },
+            "oneplus 7 pro": { general: 91, redDot: 87, scope2x: 84, scope4x: 80, sniper: 75, freeLook: 97 },
+            "oneplus nord ce": { general: 88, redDot: 84, scope2x: 80, scope4x: 76, sniper: 71, freeLook: 93 },
+
+            // Tecno Models (10)
+            "tecno spark 10": { general: 86, redDot: 82, scope2x: 78, scope4x: 74, sniper: 69, freeLook: 91 },
+            "tecno spark 10 pro": { general: 87, redDot: 83, scope2x: 79, scope4x: 75, sniper: 70, freeLook: 92 },
+            "tecno pova 5": { general: 88, redDot: 84, scope2x: 80, scope4x: 76, sniper: 71, freeLook: 93 },
+            "tecno pova 5 pro": { general: 89, redDot: 85, scope2x: 81, scope4x: 77, sniper: 72, freeLook: 94 },
+            "tecno camon 20": { general: 88, redDot: 84, scope2x: 80, scope4x: 76, sniper: 71, freeLook: 93 },
+            "tecno camon 20 pro": { general: 89, redDot: 85, scope2x: 81, scope4x: 77, sniper: 72, freeLook: 94 },
+            "tecno spark 9": { general: 86, redDot: 82, scope2x: 78, scope4x: 74, sniper: 69, freeLook: 91 },
+            "tecno pova 4": { general: 87, redDot: 83, scope2x: 79, scope4x: 75, sniper: 70, freeLook: 92 },
+            "tecno camon 19": { general: 87, redDot: 83, scope2x: 79, scope4x: 75, sniper: 70, freeLook: 92 },
+            "tecno spark 8": { general: 85, redDot: 81, scope2x: 77, scope4x: 73, sniper: 68, freeLook: 90 },
+
+            // Nokia Models (10)
+            "nokia g42": { general: 87, redDot: 83, scope2x: 79, scope4x: 75, sniper: 70, freeLook: 92 },
+            "nokia c32": { general: 86, redDot: 82, scope2x: 78, scope4x: 74, sniper: 69, freeLook: 91 },
+            "nokia g22": { general: 86, redDot: 82, scope2x: 78, scope4x: 74, sniper: 69, freeLook: 91 },
+            "nokia c21": { general: 85, redDot: 81, scope2x: 77, scope4x: 73, sniper: 68, freeLook: 90 },
+            "nokia g60": { general: 88, redDot: 84, scope2x: 80, scope4x: 76, sniper: 71, freeLook: 93 },
+            "nokia x30": { general: 89, redDot: 85, scope2x: 81, scope4x: 77, sniper: 72, freeLook: 94 },
+            "nokia c12": { general: 85, redDot: 81, scope2x: 77, scope4x: 73, sniper: 68, freeLook: 90 },
+            "nokia g11": { general: 86, redDot: 82, scope2x: 78, scope4x: 74, sniper: 69, freeLook: 91 },
+            "nokia x20": { general: 88, redDot: 84, scope2x: 80, scope4x: 76, sniper: 71, freeLook: 93 },
+            "nokia c31": { general: 85, redDot: 81, scope2x: 77, scope4x: 73, sniper: 68, freeLook: 90 },
+
+            // Other Popular Brands (10)
+            "motorola edge 50": { general: 92, redDot: 88, scope2x: 85, scope4x: 81, sniper: 76, freeLook: 98 },
+            "motorola moto g54": { general: 89, redDot: 85, scope2x: 81, scope4x: 77, sniper: 72, freeLook: 94 },
+            "motorola moto g84": { general: 90, redDot: 86, scope2x: 82, scope4x: 78, sniper: 73, freeLook: 95 },
+            "huawei nova 11": { general: 90, redDot: 86, scope2x: 82, scope4x: 78, sniper: 73, freeLook: 95 },
+            "huawei p60 pro": { general: 93, redDot: 89, scope2x: 86, scope4x: 82, sniper: 77, freeLook: 99 },
+            "asus zenfone 10": { general: 93, redDot: 89, scope2x: 86, scope4x: 82, sniper: 77, freeLook: 99 },
+            "sony xperia 5": { general: 92, redDot: 88, scope2x: 85, scope4x: 81, sniper: 76, freeLook: 98 },
+            "lg velvet": { general: 90, redDot: 86, scope2x: 82, scope4x: 78, sniper: 73, freeLook: 95 },
+            "google pixel 8": { general: 93, redDot: 89, scope2x: 86, scope4x: 82, sniper: 77, freeLook: 99 },
+            "google pixel 7": { general: 92, redDot: 88, scope2x: 85, scope4x: 81, sniper: 76, freeLook: 98 },
+
+            // Default Fallback
+            "default": { general: 85, redDot: 80, scope2x: 77, scope4x: 73, sniper: 68, freeLook: 90 }
+        };
+
+        document.querySelector('.search-btn').addEventListener('click', () => {
+            const searchInput = document.querySelector('#deviceSearch').value.toLowerCase().trim();
+            const resultsDiv = document.querySelector('#results');
+            let settings = deviceSensitivity[searchInput];
+
+            // Handle empty input
+            if (!searchInput) {
+                resultsDiv.innerHTML = `
+                    <h3>No Device Entered</h3>
+                    <p>Please enter a device model to get sensitivity settings.</p>
+                `;
+                return;
+            }
+
+            // If exact match found
+            if (settings) {
+                resultsDiv.innerHTML = `
+                    <h3>Sensitivity for ${searchInput.charAt(0).toUpperCase() + searchInput.slice(1)}</h3>
+                    <p><strong>General:</strong> ${settings.general}</p>
+                    <p><strong>Red Dot:</strong> ${settings.redDot}</p>
+                    <p><strong>2x Scope:</strong> ${settings.scope2x}</p>
+                    <p><strong>4x Scope:</strong> ${settings.scope4x}</p>
+                    <p><strong>Sniper Scope:</strong> ${settings.sniper}</p>
+                    <p><strong>Free Look:</strong> ${settings.freeLook}</p>
+                    <p><strong>Tip:</strong> Test in Training Mode and adjust ±5 for your playstyle.</p>
+                `;
+            } else {
+                // Find all partial matches
+                const matches = Object.keys(deviceSensitivity)
+                    .filter(device => device !== "default" && device.includes(searchInput));
+
+                if (matches.length > 0) {
+                    resultsDiv.innerHTML = `
+                        <h3>Device Not Found</h3>
+                        <p>Sorry, "${searchInput}" is not in our database. Here are similar devices (click to view settings):</p>
+                        <ul>
+                            ${matches.map(device => `<li onclick="document.querySelector('#deviceSearch').value = '${device}'; document.querySelector('.search-btn').click();">${device.charAt(0).toUpperCase() + device.slice(1)}</li>`).join('')}
+                        </ul>
+                        <h3>Suggested Sensitivity for ${matches[0].charAt(0).toUpperCase() + matches[0].slice(1)}</h3>
+                        <p><strong>General:</strong> ${deviceSensitivity[matches[0]].general}</p>
+                        <p><strong>Red Dot:</strong> ${deviceSensitivity[matches[0]].redDot}</p>
+                        <p><strong>2x Scope:</strong> ${deviceSensitivity[matches[0]].scope2x}</p>
+                        <p><strong>4x Scope:</strong> ${deviceSensitivity[matches[0]].scope4x}</p>
+                        <p><strong>Sniper Scope:</strong> ${deviceSensitivity[matches[0]].sniper}</p>
+                        <p><strong>Free Look:</strong> ${deviceSensitivity[matches[0]].freeLook}</p>
+                        <p><strong>Tip:</strong> Click a device above to view its settings or try a different search.</p>
+                    `;
+                } else {
+                    settings = deviceSensitivity["default"];
+                    resultsDiv.innerHTML = `
+                        <h3>Device Not Found</h3>
+                        <p>Sorry, "${searchInput}" is not in our database. Try a different device name or use these default settings:</p>
+                        <p><strong>General:</strong> ${settings.general}</p>
+                        <p><strong>Red Dot:</strong> ${settings.redDot}</p>
+                        <p><strong>2x Scope:</strong> ${settings.scope2x}</p>
+                        <p><strong>4x Scope:</strong> ${settings.scope4x}</p>
+                        <p><strong>Sniper Scope:</strong> ${settings.sniper}</p>
+                        <p><strong>Free Look:</strong> ${settings.freeLook}</p>
+                        <p><strong>Tip:</strong> Test in Training Mode and adjust ±5 for your playstyle.</p>
+                    `;
+                }
+            }
+        });
+    </script>
+</body>
+</html>
